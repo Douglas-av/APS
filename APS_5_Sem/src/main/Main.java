@@ -1,5 +1,6 @@
-package conexao;
+package main;
 
+import conexao.DB;
 import telas.Login;
 
 public class Main {

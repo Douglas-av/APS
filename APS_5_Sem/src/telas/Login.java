@@ -133,7 +133,9 @@ public class Login extends JFrame {
 			while ((res.next()) & condicao) {
 				System.out.println(usuario.equals(res.getString("usuario").strip()));
 				if ((usuario.equals(res.getString("usuario").strip())) & (passwd.equals(res.getString("senha").strip()))) {
-					System.out.println("Proxima tela (a criar)");
+					Home homePag = new Home();
+					homePag.setVisible(true);
+					dispose();
 					condicao = false;
 				}
 			}

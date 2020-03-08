@@ -148,12 +148,12 @@ public class Cadastro extends JFrame {
 		String passwd = password.getText();
 		String email = textEmail.getText();
 		String idade = textIdade.getText();
-		
-		if ((!usuario.isBlank()) & (!passwd.isBlank()) & (!email.isBlank())){
+
+		if ((!usuario.isBlank()) & (!passwd.isBlank()) & (!email.isBlank())) {
 			System.out.println("Entrou");
 			CriarConexaoDB banco = new CriarConexaoDB(this.dbName);
 			banco.connect();
-			
+
 			String query = "INSERT INTO usuarios values(null,";
 			query += "'" + usuario + "', ";
 			query += "'" + passwd + "', ";
